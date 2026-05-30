@@ -38,12 +38,25 @@ daily/          — one log file per day (YYYY-MM-DD.md)
 weekly/         — weekly reviews (YYYY-WNN.md)
 training/       — your training schedule and phases
 principles/     — personal decision framework, grows from experience
-projects/       — one file per project, with session logs
+projects/       — one file per project, with session logs + finances.md
 books/          — reading tracker
 system/         — routine.md (daily ritual) + drift-signals.md (thresholds)
+who-i-am.md    — your personal config: identity, schedule, activities, modes
 home.md         — root hub, links to all sections
-CLAUDE.md       — instructions for your Claude Code assistant
+CLAUDE.md       — system instructions for your Claude Code assistant
 ```
+
+---
+
+## Skills
+
+Built-in Claude Code skills — invoke with `/skill-name`:
+
+| Command | What it does |
+|---------|--------------|
+| `/setup` | First-time setup walkthrough — fills in `who-i-am.md`, configures training links, optionally creates `finances.md` |
+| `/weekly-review` | Generate this week's review from daily logs — computes averages, runs drift check, writes and commits the file |
+| `/drift-check` | Check the last 7 days for drift signals — read-only report, use any time mid-week |
 
 ---
 
@@ -53,17 +66,21 @@ CLAUDE.md       — instructions for your Claude Code assistant
 
 Click **Use this template** → **Create a new repository**. Keep it private — this is your personal data.
 
-### 2. Fill in CLAUDE.md
+### 2. Fill in `who-i-am.md`
 
-Open `CLAUDE.md` and replace all `[PLACEHOLDER]` sections with your actual context: who you are, your schedule, your operating modes. This is what Claude reads before doing anything.
+Open `who-i-am.md` and replace the placeholders with your actual context: who you are, your activities, your schedule, any operating modes. This is what Claude reads before doing anything in the repo.
 
 ### 3. Set up Claude Code
 
-Install [Claude Code](https://claude.ai/code) and open your repo. Claude will read `CLAUDE.md` automatically and know your system.
+Install [Claude Code](https://claude.ai/code) and open your repo. Claude will read `CLAUDE.md` and `who-i-am.md` automatically.
 
-### 4. Start your first daily log
+### 4. Run `/setup`
 
-Ask Claude: *"start today's log"* — it will create the file, ask the right questions, and fill the fields. Or copy `daily/example.md` and fill it yourself.
+Type `/setup` in Claude Code for a guided walkthrough. It will read your `who-i-am.md`, confirm your training activities, and optionally create a `projects/finances.md` for tracking purchases and financial decisions.
+
+### 5. Start your first daily log
+
+Ask Claude: *"start today's log"* — it will create the file, ask the right questions, and fill the fields.
 
 ### 5. Let the data build
 
