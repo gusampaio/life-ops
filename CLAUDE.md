@@ -41,14 +41,13 @@ Every file in `daily/` follows this exact format:
 | Field | Value |
 |-------|-------|
 | sleep | solid | ok | broken | late |
-| screen_first | nothing | water | phone-passive | instagram | whatsapp | email | claude |
+| screen_first | nothing | phone-passive | social | email | productive |
 | training | yes | partial | no | rest-day |
 | food | good | ok | poor | skipped |
 | energy | 1–5 |
 | mood | 1–5 |
 | deep_work | yes | partial | no — reactive day |
 | mind | both | reading only | meditation only | neither |
-| substances | none | weed-N (N = number of Js) |
 
 ## Note
 [one sentence about the day]
@@ -73,16 +72,13 @@ The header `←` line must include all relevant topic links for that day. This l
 - `[[training/program]]` — every day
 
 **Include only when the topic is relevant that day:**
-- `[[training/run]]` — a run session happened
-- `[[training/gym]]` — a gym session happened
-- `[[training/bjj]]` — a BJJ or martial arts session happened
-- `[[training/swim]]` — a swim session happened
+- `[[training/your-activity]]` — one link per training type in `who-i-am.md` (e.g. `training/run`, `training/gym`)
 - `[[books/current-book-slug]]` — mind includes reading
 - `[[projects/your-project]]` — a project was worked on (use the actual project slug)
 - `[[projects/finances]]` — finances were noted or discussed
 - `[[principles/README]]` — a principle was reflected on or added
 
-Customize the training and project links to match the activities and projects defined in `who-i-am.md`.
+Define your training activity links in `who-i-am.md` — one file per activity type under `training/`.
 
 ### Periodic fields (ask proactively, not every day)
 
