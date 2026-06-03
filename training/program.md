@@ -1,10 +1,10 @@
 # Training Program
 
-Your current schedule and active phases.
+← [[home]]
 
----
+## Weekly template
 
-## Weekly schedule
+Fill in your actual schedule. Each sport that happens on a given day should have its own file under `training/` (e.g. `training/run.md`, `training/bjj.md`).
 
 | Day | Session |
 |-----|---------|
@@ -16,24 +16,18 @@ Your current schedule and active phases.
 | Sat | |
 | Sun | |
 
----
+## Principles
 
-## Current phase
+Add the rules that govern how you balance sessions — what takes priority when energy is low, which to protect, which to drop first.
 
-**Phase:** [e.g. Strength base / Hypertrophy / Maintenance]
-**Started:** YYYY-MM-DD
-**Goal:** [one sentence]
+## Goals
 
----
+- **[Sport]:** [goal + target date]
 
-## Lifts (if applicable)
+## Periodization (optional)
 
-| Movement | Current | Target |
-|----------|---------|--------|
+If you're running structured phases, track them here:
+
+| Phase | Period | Focus |
+|-------|--------|-------|
 | | | |
-
----
-
-## Notes
-
-Add context: injuries, constraints, periodization logic, what you're building toward.

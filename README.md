@@ -36,11 +36,12 @@ The system is intentionally minimal. No app, no subscription, no gamification. J
 ```
 daily/          — one log file per day (YYYY-MM-DD.md)
 weekly/         — weekly reviews (YYYY-WNN.md)
-training/       — your training schedule and phases
+training/       — program.md (weekly schedule + goals) + one file per sport with program and session log
 principles/     — personal decision framework, grows from experience
 projects/       — one file per project, with session logs + finances.md
 books/          — reading tracker
 system/         — routine.md (daily ritual) + drift-signals.md (thresholds)
+archive/        — old notes and files, removed from the active graph
 who-i-am.md    — your personal config: identity, schedule, activities, modes
 home.md         — root hub, links to all sections
 CLAUDE.md       — system instructions for your Claude Code assistant
@@ -115,7 +116,7 @@ Every file in `daily/` follows this structure:
 ```markdown
 # YYYY-MM-DD
 
-← [[weekly/YYYY-WNN]] · [[training/program]] · [[books/current-book]]
+← [[weekly/YYYY-WNN]] · [[training/run]] · [[books/current-book]]
 
 ## Log
 

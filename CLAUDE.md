@@ -9,11 +9,12 @@ This is a personal life operating system. Read `who-i-am.md` before doing anythi
 ```
 daily/          — daily log entries (YYYY-MM-DD.md), one per day
 weekly/         — weekly reviews (YYYY-WNN.md)
-training/       — program.md with schedule and session notes
+training/       — program.md (weekly schedule + goals) + one file per sport with program and session log
 principles/     — personal decision framework, grows over time
 projects/       — project tracking files (one per project) + finances
 system/         — routine.md (daily ritual) + drift-signals.md (pattern detection)
 books/          — one file per book + reading.md as section hub
+archive/        — old notes and files, removed from the active graph
 who-i-am.md    — personal config: identity, schedule, activities, modes
 home.md         — root hub, links to all sections (central graph node)
 ```
@@ -34,7 +35,7 @@ Every file in `daily/` follows this exact format:
 ```markdown
 # YYYY-MM-DD
 
-← [[weekly/YYYY-WNN]] · [[training/program]] [conditional topic links — see rules below]
+← [[weekly/YYYY-WNN]] [conditional topic links — see rules below]
 
 ## Log
 
@@ -69,10 +70,9 @@ The header `←` line must include all relevant topic links for that day. This l
 
 **Always include:**
 - `[[weekly/YYYY-WNN]]` — every day
-- `[[training/program]]` — every day
 
 **Include only when the topic is relevant that day:**
-- `[[training/your-activity]]` — one link per training type in `who-i-am.md` (e.g. `training/run`, `training/gym`)
+- `[[training/your-activity]]` — one link per training type that happened (e.g. `training/run`, `training/gym`, `training/bjj`)
 - `[[books/current-book-slug]]` — mind includes reading
 - `[[projects/your-project]]` — a project was worked on (use the actual project slug)
 - `[[projects/finances]]` — finances were noted or discussed
@@ -148,6 +148,9 @@ Use `/drift-check` — or manually: read the last 7 daily log files and check ea
 
 ### Update a project session log
 After a work session, append a row to the session log table in `projects/[project].md` with today's date, what was done, and what's next.
+
+### Log a training session
+When a training session is mentioned in the daily log, also append a row to the session log in the relevant sport file (`training/bjj.md`, `training/gym.md`, `training/run.md`, etc.). Include: date (linked to the daily), session type, key details, and a short note. Use the existing rows as the format reference.
 
 ### Add a principle
 Append to the relevant section in `principles/README.md`.
